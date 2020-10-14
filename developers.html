@@ -31,7 +31,7 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body onkeypress="rotateK(event)">
 	<!-- start header Area -->
 	<header id="header">
 		<div class="container main-menu">
@@ -60,8 +60,8 @@
             <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
             <div class="container">
                 <div class="blog_b_text text-center">
-                    <h2 class="text-white">About the Developers</h2>
-                    <p>There is a moment in the life of any aspiring developer that it is time to hit the <b>Enter key</b></p>
+                    <h2 class="text-white">About the <div id="easter" style="display: inline-block;">Developers</div></h2>
+                    <p>There is a moment in the life of any aspiring developer that it is time to hit the <b style="cursor: pointer;" onclick="rotate()">Enter key</b></p>
                     <a class="white_bg_btn" href="#jump-area">View More</a>
                 </div>
             </div>
@@ -413,6 +413,29 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="js/waypoints.min.js"></script>
 	<script src="js/mail-script.js"></script>
 	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		function rotate() {
+			document.getElementById('easter').style.transform = "rotateY(180deg)";
+			setTimeout(function() { 
+				alert("Hurray! You found an easter egg!");
+			}, 500)
+			setTimeout(function() { 
+				document.getElementById('easter').style.transform = "rotateY(360deg)";
+			}, 5000)
+		}
+		function rotateK() {
+			var x = event.which || event.keyCode;
+			if(x == 13) {
+				document.getElementById('easter').style.transform = "rotateY(180deg)";
+				setTimeout(function() { 
+					alert("Hurray! You found an easter egg!");
+				}, 500)
+			}
+			setTimeout(function() { 
+				document.getElementById('easter').style.transform = "rotateY(360deg)";
+			}, 5000)
+		}
+	</script>
 </body>
 
 </html>
