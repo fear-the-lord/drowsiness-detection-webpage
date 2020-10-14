@@ -32,6 +32,9 @@
 </head>
 
 <body onkeypress="rotateK(event)">
+	<div style="display: block; background: rgba(0, 0, 0, 0.6); position: fixed; height: 100% ; width: 100%; z-index: 1000; cursor: pointer;" id="easter-overlay" onclick="off()" hidden>
+		<p style="position: fixed; color:rgba(255, 255, 255, 1.0); text-align: center; padding: 4em; font-size: 5em; margin: auto; width: 100%; line-height: 1em;">Awesome! You found our easter egg!</p>
+	</div>
 	<!-- start header Area -->
 	<header id="header">
 		<div class="container main-menu">
@@ -416,9 +419,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script type="text/javascript">
 		function rotate() {
 			document.getElementById('easter').style.transform = "rotateY(180deg)";
-			setTimeout(function() { 
-				alert("Hurray! You found an easter egg!");
-			}, 500)
+			setTimeout(function() {
+				document.getElementById('easter-overlay').removeAttribute('hidden');
+			}, 1000)
 			setTimeout(function() { 
 				document.getElementById('easter').style.transform = "rotateY(360deg)";
 			}, 5000)
@@ -427,13 +430,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			var x = event.which || event.keyCode;
 			if(x == 13) {
 				document.getElementById('easter').style.transform = "rotateY(180deg)";
-				setTimeout(function() { 
-					alert("Hurray! You found an easter egg!");
-				}, 500)
+				setTimeout(function() {
+					document.getElementById('easter-overlay').removeAttribute('hidden');
+				}, 1000)
 			}
 			setTimeout(function() { 
 				document.getElementById('easter').style.transform = "rotateY(360deg)";
 			}, 5000)
+		}
+		function off() {
+			document.getElementById('easter-overlay').setAttribute('hidden', 'hidden');
 		}
 	</script>
 </body>
