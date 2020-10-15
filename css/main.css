@@ -696,7 +696,7 @@ td, th {
   background-color: #fff;
   color: #000 !important; }
   @media (max-width: 991px) {
-    .buttons:first-child {
+    .buttons {
       margin-bottom: 16px; } }
   .buttons i {
     font-size: 44px;
