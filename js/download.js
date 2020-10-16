@@ -5,8 +5,8 @@ function download(googleUser) {
 function sendEmail(id, name, image, email) { 
     Email.send({ 
         Host: "smtp.gmail.com", 
-        Username: "rajarsi3997@gmail.com", 
-        Password: "rlbquqrdqkdngvkb", 
+        Username: "ultradevsofficial2020@gmail.com", 
+        Password: "qwysuahlmbfeczta", 
         To: 'ultradevsofficial2020@gmail.com', 
         From: email, 
         Subject: "Downloaded by " + name, 
