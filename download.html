@@ -15,10 +15,16 @@
 	<!-- meta character set -->
 	<meta charset="UTF-8">
 	<!-- Site Title -->
-	<title>Pricing</title>
+	<title>Download</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600|Roboto:400,400i,500" rel="stylesheet">
-	<!--
+    
+    <meta name="google-signin-client_id" content="574180701467-7nk5f2773sjrlpend2ht9tml439usj2f.apps.googleusercontent.com">
+
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+	<script src="js/download.js"></script>
+    <!--
 			CSS
 			============================================= -->
 	<link rel="stylesheet" href="css/linearicons.css">
@@ -61,17 +67,14 @@
 				<div class="col-lg-12 d-flex align-items-center justify-content-between">
 					<div class="left-part">
 						<h1>
-							Frequently Asked Questions
+							Download Application
 						</h1>
-						<p>
-							Feel free to refer to our FAQ to understand what we do and get a good insight into the kind of applications and services we provide. Please do not hesitate to contact us through our Contacts page if you have any further questions.
-						</p>
-						<a class="primary-btn text-uppercase" href="contact.html">Contact Us</a>
+						<p>Please <b>Sign In</b> using your google account to download the app. This is done to prevent web crawlers and fraudulent users from getting access to our product. Will just take a moment. Thank you!</p>
 					</div>
 					<div class="right-part">
 						<a href="index.html">home</a>
 						<span class="fa fa-caret-right"></span>
-						<a href="faq.html">FAQ</a>
+						<a href="download.html">download</a>
 					</div>
 				</div>
 			</div>
@@ -86,77 +89,54 @@
 			<div class="row d-flex justify-content-center">
 				<div class="col-lg-6">
 					<div class="section-title text-center">
-						<h2>Questions & Answers</h2>
-						<p>A few frequently asked questions to help you out on-the-go.
+						<h2>Drowsiness Detector App Download</h2>
+						<p>Download now with Google Sign In. Thank you for downloading our app. We hope you'll enjoy using it.
 						</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="row" style="margin-bottom: 1%;">
-				<div class="col-lg-12 col-md-6">
+			<div class="row justify-content-center" style="margin-bottom: 5%;">
+				<div class="col-lg-6 col-md-6">
 					<div class="single-price">
-						<div class="top-sec d-flex justify-content-between">
-							<div class="top-left">
-								<h4>Can I login using my social media accounts?</h4>
+						<div class="top-sec d-flex justify-content-center">
+							<div class="text-center">
+								<h3>Download Now</h3>
 							</div>
 						</div>
-						<div class="end-sec" style="text-align: left;">
-							<ul>
-								<li>No, for the time-being we are not providing this facility, but sooner or later you shall get to login using most of the social media accounts like Gmail, Facebook, LinkedIn, GitHub, etc.</li>
+                        <div class="end-sec" class="justify-content-center">
+                            <script>
+								function onSuccess(googleUser) {
+									download(googleUser);
+									signOut();
+								}
+								function onFailure(error) {
+									console.log(error);
+								}
+								function renderButton() {
+									gapi.signin2.render('my-signin2', {
+										'scope': 'profile email openid',
+										'width': 240,
+										'height': 50,
+										'longtitle': true,
+										'theme': 'dark',
+										'onsuccess': onSuccess,
+										'onfailure': onFailure
+									});
+								}
+							</script>
+							<script>
+								function signOut() {
+								  var auth2 = gapi.auth2.getAuthInstance();
+								  auth2.signOut().then(function () {
+									console.log('User signed out.');
+								  });
+								}
+							</script>
+							<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+							<ul class="d-flex justify-content-center">
+								<li><div id="my-signin2"></div></li>
 							</ul>
-						<button class="primary-btn price-btn mt-20" onclick="satisfy(this)">Satisfied with answer?</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row" style="margin-bottom: 1%;">
-				<div class="col-lg-12 col-md-6">
-					<div class="single-price">
-						<div class="top-sec d-flex justify-content-between">
-							<div class="top-left">
-								<h4>Does the app record any user information?</h4>
-							</div>
-						</div>
-						<div class="end-sec" style="text-align: left;">
-							<ul>
-								<li>No, this app works offline and therefore, no user information is collected or stored for the app usage. Also, the developers do not collect any user information from the app and therefore, a user need not worry about this his or her information or data getting leaked.</li>
-							</ul>
-						<button class="primary-btn price-btn mt-20" onclick="satisfy(this)">Satisfied with answer?</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row" style="margin-bottom: 1%;">
-				<div class="col-lg-12 col-md-6">
-					<div class="single-price">
-						<div class="top-sec d-flex justify-content-between">
-							<div class="top-left">
-								<h4>Does it require internet to run?</h4>
-							</div>
-						</div>
-						<div class="end-sec" style="text-align: left;">
-							<ul>
-								<li>No, abosoluetly not. This app does not require internet collection neither does require sms charges. This app works without internet connection and therefore, is quite suitable for areas with weak internet connection and also areas like hils or mountains where cell towers still do not exit even today.</li>
-							</ul>
-						<button class="primary-btn price-btn mt-20" onclick="satisfy(this)">Satisfied with answer?</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row" style="margin-bottom: 1%;">
-				<div class="col-lg-12 col-md-6">
-					<div class="single-price">
-						<div class="top-sec d-flex justify-content-between">
-							<div class="top-left">
-								<h4>How often does Ultra-Dev$ create such applications and products?</h4>
-							</div>
-						</div>
-						<div class="end-sec" style="text-align: left;">
-							<ul>
-								<li>We are still in our early stages and building such things require a lot of time and effort. We do try to come up with good ideas which serves people with a lot of ease in their lives, but again such things take time. We also take up ideas from investors for building great applicaions and also we do appreciate if you support our work in whatever way it is possible for you.</li>
-							</ul>
-						<button class="primary-btn price-btn mt-20" onclick="satisfy(this)">Satisfied with answer?</button>
 						</div>
 					</div>
 				</div>
@@ -263,15 +243,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="js/waypoints.min.js"></script>
 	<script src="js/mail-script.js"></script>
 	<script src="js/main.js"></script>
-	<script>
-		function satisfy(obj) {
-			obj.innerHTML = 'Thank you!';
-			obj.setAttribute('disabled', 'disabled');
-			setTimeout(() => {
-				obj.setAttribute('hidden', 'hidden');
-			}, 1500);
-		}
-	</script>
 </body>
 
 </html>
