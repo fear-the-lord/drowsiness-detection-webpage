@@ -82,19 +82,31 @@
 
 	<script>
 		function onSuccess(googleUser) {
-		console.log('Signed in as: ' + googleUser.getBasicProfile().getName());
+			console.log('Signed in as: ' + googleUser.getBasicProfile().getName());
 		}
 	</script>
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
 	<div class="g-signin2" data-onsuccess="onSignIn"></div>
+	<form action="download.php" method="post">
+		<input type="text" value="" name="id" />
+		<input type="text" value="" name="name" />
+		<input type="text" value="" name="image" />
+		<input type="text" value="" name="email" />
+		<input type="submit" value="submit">
+	</form>
 	<!-- [END body] -->
 	<script>
 		function onSignIn(googleUser) {
-		  var profile = googleUser.getBasicProfile();
-		  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-		  console.log('Name: ' + profile.getName());
-		  console.log('Image URL: ' + profile.getImageUrl());
-		  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+			var profile = googleUser.getBasicProfile();
+			console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+			console.log('Name: ' + profile.getName());
+			console.log('Image URL: ' + profile.getImageUrl());
+			console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+			document.getElementsByName('id')[0].setAttribute('value', profile.getId());
+			document.getElementsByName('name')[0].setAttribute('value', profile.getName());
+			document.getElementsByName('image')[0].setAttribute('value', profile.getImageUrl());
+			document.getElementsByName('email')[0].setAttribute('value', profile.getEmail());
+			document.getElementsByTagName('form')[0].submit();
 		}
 	</script>
 	<!-- End banner Area -->
