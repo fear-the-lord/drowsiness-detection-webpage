@@ -16,7 +16,7 @@
         <tr><td>Email: '.$email.'</td></tr>
     </table>';
 
-    $file = ("storage/sample_file.apk");
+    $file = ("./storage/sample_file.apk");
     $filetype = filetype($file);
     $filename = basename($file);
 
