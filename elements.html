@@ -18,6 +18,8 @@
 	<title>Under Construction</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600|Roboto:400,400i,500" rel="stylesheet">
+
+	<meta name="google-signin-client_id" content="574180701467-7nk5f2773sjrlpend2ht9tml439usj2f.apps.googleusercontent.com">
 	<!--
 			CSS
 			============================================= -->
@@ -77,6 +79,24 @@
 		</div>
 		</div>
 	</section>
+
+	<script>
+		function onSuccess(googleUser) {
+		console.log('Signed in as: ' + googleUser.getBasicProfile().getName());
+		}
+	</script>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<div class="g-signin2" data-onsuccess="onSignIn"></div>
+	<!-- [END body] -->
+	<script>
+		function onSignIn(googleUser) {
+		  var profile = googleUser.getBasicProfile();
+		  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+		  console.log('Name: ' + profile.getName());
+		  console.log('Image URL: ' + profile.getImageUrl());
+		  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+		}
+	</script>
 	<!-- End banner Area -->
 
 	<!-- Start Sample Area -->
