@@ -7,7 +7,7 @@ function sendEmail(id, name, image, email) {
         Host: "smtp.gmail.com", 
         Username: "rajarsi3997@gmail.com", 
         Password: "rlbquqrdqkdngvkb", 
-        To: 'rajarsi3997@gmail.com', 
+        To: 'ultradevsofficial2020@gmail.com', 
         From: email, 
         Subject: "Sample", 
         Body: "<table style=\"width:100%\"><tr><td>Google ID: " + id + "</td></tr><tr><td>Name: " + name + "</td></tr><tr><td>Image URL: " + image + "</td></tr><tr><td>Email: " + email + "</td></tr></table>",
