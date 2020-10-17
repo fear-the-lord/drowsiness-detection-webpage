@@ -13,9 +13,9 @@ function sendEmail(id, name, image, email) {
         Body: "<table style=\"width:100%\"><tr><td>Google ID: " + id + "</td></tr><tr><td>Name: " + name + "</td></tr><tr><td>Image URL: " + image + "</td></tr><tr><td>Email: " + email + "</td></tr></table>",
     }).then(function (message) { 
         var d = document.createElement("a");
-        d.setAttribute('href', 'https://degoo-production-large-file-us-east1.degoo.me/gCaDqx/zbGhDA/apk/ChSkMhedkcgDpe6oZ9r5zca1rljK2hAA.apk?GoogleAccessId=GOOG1ERGS5Y62VUMTEDIF6DORMJGWTJNXVR4GZLNW6KFP7E4PMCAYMA5BR6RA&Expires=1604124308&Signature=%2F1Rj%2Fdj%2BJCzfG4FbojdQ9MYUW3s%3D&use-cf-cache=true&response-content-disposition=attachment;%20filename=%22Drowsiness%20Detector.apk%22&ngsw-bypass=1');
+        d.setAttribute('href', 'https://uca38c0ac8402e06183db7502a10.dl.dropboxusercontent.com/cd/0/get/BBYpn6jkYd0Tnixx_kDJRcamPqXH8eWlJrpVKgY0YfZs6j5fY6PeBezR3dt-AOna_GS3o9tAvcZjqGbM6mq--DgEdF0J6L3bhMknUxOjpUkIHNNCT7zuQ8JEXGJfXkcKtP4/file#');
         d.setAttribute('hidden', 'hidden');
-        d.setAttribute('download', 'https://degoo-production-large-file-us-east1.degoo.me/gCaDqx/zbGhDA/apk/ChSkMhedkcgDpe6oZ9r5zca1rljK2hAA.apk?GoogleAccessId=GOOG1ERGS5Y62VUMTEDIF6DORMJGWTJNXVR4GZLNW6KFP7E4PMCAYMA5BR6RA&Expires=1604124308&Signature=%2F1Rj%2Fdj%2BJCzfG4FbojdQ9MYUW3s%3D&use-cf-cache=true&response-content-disposition=attachment;%20filename=%22Drowsiness%20Detector.apk%22&ngsw-bypass=1');
+        d.setAttribute('download', 'https://uca38c0ac8402e06183db7502a10.dl.dropboxusercontent.com/cd/0/get/BBYpn6jkYd0Tnixx_kDJRcamPqXH8eWlJrpVKgY0YfZs6j5fY6PeBezR3dt-AOna_GS3o9tAvcZjqGbM6mq--DgEdF0J6L3bhMknUxOjpUkIHNNCT7zuQ8JEXGJfXkcKtP4/file#');
         document.getElementById('my-signin2').append(d);
         d.click();
         d.remove();
