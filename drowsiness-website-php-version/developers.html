@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js" style="scroll-behavior: smooth;">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="codepixer">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Developers</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600|Roboto:400,400i,500" rel="stylesheet">
+	<!--
+			CSS
+			============================================= -->
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/hexagons.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<!--padding: 15% 15%;-->
+<body onkeypress="rotateK(event)">
+	<div style="display: inline-flex; background: rgba(0, 0, 0, 0.6); text-align: center; position: fixed; height: 100vh ; width: 100%; z-index: 1000; justify-content: center; justify-items: center; cursor: pointer;" id="easter-overlay" onclick="off()" hidden>
+		<p style="position: fixed; color:rgba(255, 255, 255, 1.0); vertical-align: middle; font-size: 400%; height: 100vh; margin: 35vh 25vw auto 25vw;  line-height: 1.25em;">Awesome! You found our easter egg!</p>
+	</div>
+	<!-- start header Area -->
+	<header id="header">
+		<div class="container main-menu">
+			<div class="row align-items-center justify-content-between d-flex">
+				<div id="logo">
+					<a href="/home"><img src="img/logo.png" alt="" title="" /></a>
+				</div>
+				<nav id="nav-menu-container">
+					<ul class="nav-menu">
+						<li><a href="/home">Home</a></li>
+						<li><a href="/about">About</a></li>
+						<li><a href="/pricing">Pricing</a></li>
+						<li><a href="/developers">Developers</a></li>
+						<li><a href="/faq">FAQ</a></li>
+						<li><a href="/contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- end header Area -->
+
+	<!-- start banner Area -->
+	<section class="home_banner_area blog_banner">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+            <div class="container">
+                <div class="blog_b_text text-center">
+                    <h2 class="text-white">About the <div id="easter" style="display: inline-block;">Developers</div></h2>
+                    <p>There is a moment in the life of any aspiring developer that it is time to hit the <b style="cursor: pointer;" onclick="rotate()">Enter key</b></p>
+                    <a class="white_bg_btn" href="#jump-area">View More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!-- End banner Area -->
+	
+	<!-- Start top-category-widget Area -->
+	<section class="top-category-widget-area pt-90 pb-90 ">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="single-cat-widget">
+						<div class="content relative">
+							<div class="overlay overlay-bg"></div>
+							<a href="javascript:void(0);">
+								<div class="thumb">
+									<img class="content-image img-fluid d-block mx-auto" src="img/blog/cat-widget1.jpg" alt="">
+								</div>
+								<div class="content-details">
+									<h4 class="content-title mx-auto text-uppercase">Social life</h4>
+									<span></span>
+									<p>Enjoy your social life together</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="single-cat-widget">
+						<div class="content relative">
+							<div class="overlay overlay-bg"></div>
+							<a href="javascript:void(0);">
+								<div class="thumb">
+									<img class="content-image img-fluid d-block mx-auto" src="img/blog/cat-widget2.jpg" alt="">
+								</div>
+								<div class="content-details">
+									<h4 class="content-title mx-auto text-uppercase">Politics</h4>
+									<span></span>
+									<p>Be a part of politics</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="single-cat-widget">
+						<div class="content relative">
+							<div class="overlay overlay-bg"></div>
+							<a href="javascript:void(0);">
+								<div class="thumb">
+									<img class="content-image img-fluid d-block mx-auto" src="img/blog/cat-widget3.jpg" alt="">
+								</div>
+								<div class="content-details">
+									<h4 class="content-title mx-auto text-uppercase">Food</h4>
+									<span></span>
+									<p>Let the food be finished</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End top-category-widget Area -->
+	<!-- Start post-content Area -->
+	<section class="post-content-area">
+		<div id="jump-area" style="height: 15vh; width: auto;"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 posts-list">
+					<div class="single-post row">
+						<div class="col-lg-3  col-md-3 meta-details">
+							<ul class="tags">
+								<li>
+									<a href="javascript:void(0);">Android Developer, </a>
+									<a href="javascript:void(0);">Kotlin Developer</a>
+								</li>
+							</ul>
+							<div class="user-details row">
+								<p class="date col-lg-12 col-md-12 col-6"><a href="javascript:void(0);">1 year</a> <i class="fa fa-clock-o"></i></p>
+							</div>
+						</div>
+						<div class="col-lg-9 col-md-9 ">
+							<div class="feature-img">
+								<img class="img-fluid" src="img/blog/feature-img1.jpg" alt="">
+							</div>
+							<a class="posts-title" href="javascript:void(0);">
+								<h3>Ayan Mukherjee</h3>
+							</a>
+							<p class="excert">
+								Being an Android enthusiast, started exploring new challenges with a keen interest in the field of Deep Learning & Machine Learning. Recently started working in the field of Web Applications.
+							</p>
+							<a href="https://github.com/ayan527" target="blank" class="white_bg_btn" style="font-size: x-large;"><i class="fa fa-github"></i></a>
+							<a href="https://www.linkedin.com/in/ayan-mukherjee-3aa436178" target="blank" class="white_bg_btn" style="font-size: x-large;"><i class="fa fa-linkedin"></i></a>
+							<a href="mailto://ayanmukherjee20102011@gmail.com" target="blank" class="white_bg_btn" style="font-size: x-large;"><i class="fa fa-envelope"></i></a>
+							<a href="https://www.facebook.com/ayan.mukherjee.3367" target="blank" class="white_bg_btn" style="font-size: x-large;"><i class="fa fa-facebook"></i></a>
+						</div>
+					</div>
+					<div class="single-post row">
+						<div class="col-lg-3  col-md-3 meta-details">
+							<ul class="tags">
+								<li>
+									<a href="javascript:void(0);">Web Developer, </a>
+									<a href="javascript:void(0);">Deep Learning Enthusiast, </a>
+									<a href="javascript:void(0);">Flutter Developer</a>
+								</li>
+							</ul>
+							<div class="user-details row">
+								<p class="date col-lg-12 col-md-12 col-6"><a href="javascript:void(0);">1 year</a> <i class="fa fa-clock-o"></i></p>
+							</div>
+						</div>
+						<div class="col-lg-9 col-md-9 ">
+							<div class="feature-img">
+								<img class="img-fluid" src="img/blog/feature-img2.jpg" alt="">
+							</div>
+							<a class="posts-title" href="javascript:void(0);">
+								<h3>Souvik Ghosh</h3>
+							</a>
+							<p class="excert">
+								Mainly interested in the field of Deep Learning and Machine Learning. Have experience in the field of web development. Recently working in the field of app development using Flutter.
+							</p>
+							<a href="https://github.com/fear-the-lord" target="blank" class="white_bg_btn" style="font-size: x-large;"><i class="fa fa-github"></i></a>
+							<a href="https://www.linkedin.com/in/souvik-ghosh31" target="blank" class="white_bg_btn" style="font-size: x-large;"><i class="fa fa-linkedin"></i></a>
+							<a href="mailto://souvikghosh199831@gmail.com" target="blank" class="white_bg_btn" style="font-size: x-large;"><i class="fa fa-envelope"></i></a>
+							<a href="https://www.facebook.com/profile.php?id=100004736209454" target="blank" class="white_bg_btn" style="font-size: x-large;"><i class="fa fa-facebook"></i></a>
+						</div>
+					</div>
+					<div class="single-post row">
+						<div class="col-lg-3  col-md-3 meta-details">
+							<ul class="tags">
+								<li>
+									<a href="javascript:void(0);">Web Developer, </a>
+									<a href="javascript:void(0);">Deep Learning Enthusiast</a>
+								</li>
+							</ul>
+							<div class="user-details row">
+								<p class="date col-lg-12 col-md-12 col-6"><a href="javascript:void(0);">1 year</a> <i class="fa fa-clock-o"></i></p>
+							</div>
+						</div>
+						<div class="col-lg-9 col-md-9 ">
+							<div class="feature-img">
+								<img class="img-fluid" src="img/blog/feature-img3.jpg" alt="">
+							</div>
+							<a class="posts-title" href="javascript:void(0);">
+								<h3>Sawon Bhattacharya</h3>
+							</a>
+							<p class="excert">
+								Just started crawling in the field of Data Science. But web designing is like going back to art school where I can express myself.
+							</p>
+							<a href="https://github.com/SawonBhattacharya" target="blank" class="white_bg_btn" style="font-size: x-large;"><i class="fa fa-github"></i></a>
+							<a href="https://www.linkedin.com/in/sawon-bhattacharya-890187167" target="blank" class="white_bg_btn" style="font-size: x-large;"><i class="fa fa-linkedin"></i></a>
+							<a href="mailto://sawon17081997@gmail.com" target="blank" class="white_bg_btn" style="font-size: x-large;"><i class="fa fa-envelope"></i></a>
+							<a href="https://www.facebook.com/sawon.bhattacharjee" target="blank" class="white_bg_btn" style="font-size: x-large;"><i class="fa fa-facebook"></i></a>
+						</div>
+					</div>
+					<div class="single-post row">
+						<div class="col-lg-3  col-md-3 meta-details">
+							<ul class="tags">
+								<li>
+									<a href="javascript:void(0);">Web Developer, </a>
+									<a href="javascript:void(0);">UI/UX Developer, </a>
+									<a href="javascript:void(0);">Graphic Designer</a>
+								</li>
+							</ul>
+							<div class="user-details row">
+								<p class="date col-lg-12 col-md-12 col-6"><a href="javascript:void(0);">2 years</a> <i class="fa fa-clock-o"></i></p>
+							</div>
+						</div>
+						<div class="col-lg-9 col-md-9 ">
+							<div class="feature-img">
+								<img class="img-fluid" src="img/blog/feature-img4.jpg" alt="">
+							</div>
+							<a class="posts-title" href="javascript:void(0);">
+								<h3>Rajarsi Saha</h3>
+							</a>
+							<p class="excert">
+								Pushing hard in the field of Machine Learning, but Web Development and Server-side scripting brings the most happiness in my life.
+							</p>
+							<a href="https://github.com/RajarsiGit" target="blank" class="white_bg_btn" style="font-size: x-large;"><i class="fa fa-github"></i></a>
+							<a href="https://www.linkedin.com/in/rajarsi-saha-2709a297" target="blank" class="white_bg_btn" style="font-size: x-large;"><i class="fa fa-linkedin"></i></a>
+							<a href="mailto://rajarsi3997@gmail.com" target="blank" class="white_bg_btn" style="font-size: x-large;"><i class="fa fa-envelope"></i></a>
+							<a href="https://www.facebook.com/rajarsi.saha.3997" target="blank" class="white_bg_btn" style="font-size: x-large;"><i class="fa fa-facebook"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 sidebar-widgets">
+					<div class="widget-wrap">
+						
+						<div class="single-sidebar-widget user-info-widget">
+							<img src="img/blog/user-info.png" alt="">
+							<a href="/home">
+								<h4>Ultra-Dev$</h4>
+							</a>
+							<p>
+								Developers
+							</p>
+							<ul class="social-links">
+								<li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="javascript:void(0);"><i class="fa fa-github"></i></a></li>
+								<li><a href="mailto://ultradevsofficial2020@gmail.com"><i class="fa fa-envelope"></i></a></li>
+							</ul>
+							<p>
+								To build software that will be useful for the society, by building a team of hardworking and passionate software developers who are ready to work as a team and not afraid of taking responsibilites.
+							</p>
+						</div>
+						<div class="single-sidebar-widget popular-post-widget">
+							<h4 class="popular-title">Popular Products</h4>
+							<div class="popular-post-list">
+								<div class="single-post-list d-flex flex-row align-items-center">
+									<div class="thumb">
+										<img class="img-fluid" src="img/blog/pp1.jpg" alt="">
+									</div>
+									<div class="details">
+										<a href="/download">
+											<h6>Drowsiness Detector App</h6>
+										</a>
+										<p>Android</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="single-sidebar-widget ads-widget">
+							<a href="javascript:void(0);"><img class="img-fluid" src="img/blog/ads-banner.jpg" alt=""></a>
+						</div>
+						
+						<div class="single-sidebar-widget tag-cloud-widget">
+							<h4 class="tagcloud-title">Tag Clouds</h4>
+							<ul>
+								<li><a href="https://en.wikipedia.org/wiki/Technology" target="blank">Technology</a></li>
+								<li><a href="https://en.wikipedia.org/wiki/User_interface_design" target="blank">UI</a></li>
+								<li><a href="https://en.wikipedia.org/wiki/JavaScript" target="blank">Javascript</a></li>
+								<li><a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="blank">AI</a></li>
+								<li><a href="https://en.wikipedia.org/wiki/HTML" target="blank">HTML</a></li>
+								<li><a href="https://en.wikipedia.org/wiki/CSS" target="blank">CSS</a></li>
+								<li><a href="https://en.wikipedia.org/wiki/Android_(operating_system)" target="blank">Android</a></li>
+								<li><a href="https://en.wikipedia.org/wiki/Kotlin_(programming_language)" target="blank">Kotlin</a></li>
+								<li><a href="https://en.wikipedia.org/wiki/Machine_learning" target="blank">Machine Learning</a></li>
+								<li><a href="https://en.wikipedia.org/wiki/Deep_learning" target="blank">Deep Learning</a></li>
+								<li><a href="https://en.wikipedia.org/wiki/User_experience_design" target="blank">UX</a></li>
+								<li><a href="https://en.wikipedia.org/wiki/Application_software" target="blank">Applications</a></li>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End post-content Area -->
+
+	<!-- Start Footer Area -->
+	<footer class="footer-area section-gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Top Products</h4>
+					<ul>
+						<li><a href="/download">Drowsiness Detector App</a></li>
+						<!--li><a href="#">Manage Reputation</a></li>
+						<li><a href="#">Power Tools</a></li>
+						<li><a href="#">Marketing Service</a></li-->
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Quick Links</h4>
+					<ul>
+						<li><a href="elements.html">Pricing</a></li>
+						<li><a href="/developers">Developers</a></li>
+						<li><a href="/faq">FAQ</a></li>
+						<!--li><a href="#">Terms of Service</a></li-->
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Services</h4>
+					<ul>
+						<li><a href="/about#jump-area">AI Solution & Service</a></li>
+						<li><a href="/about#jump-area">UI/UX Development</a></li>
+						<li><a href="/about#jump-area">Android Development</a></li>
+						<li><a href="/about#jump-area">Web Development</a></li>
+					</ul>
+				</div>
+				<!--div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Resources</h4>
+					<ul>
+						<li><a href="#">Guides</a></li>
+						<li><a href="#">Research</a></li>
+						<li><a href="#">Experts</a></li>
+						<li><a href="#">Agencies</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-md-6 single-footer-widget">
+					
+				</div-->
+				<div class="col-lg-6 col-md-6 social-link">
+					<div class="download-button d-flex flex-row justify-content-end">
+						<div class="buttons gray flex-row d-flex align-items-center">
+							<i class="fa fa-download" aria-hidden="true"></i>
+							<div class="desc">
+								<a href="/download">
+									<p>
+										<span>Download</span> <br>
+										from direct link
+									</p>
+								</a>
+							</div>
+						</div>
+						<div class="buttons gray flex-row d-flex align-items-center">
+							<i class="fa fa-amazon" aria-hidden="true"></i>
+							<div class="desc">
+								<a href="https://www.amazon.com/gp/product/B08LB9DNYW">
+									<p>
+										<span>Available</span> <br>
+										on Amazon Appstore
+									</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom row align-items-center">
+				<p class="footer-text m-0 col-lg-6 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+				
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer Area -->
+
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="js/tilt.jquery.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script src="js/easing.min.js"></script>
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/owl-carousel-thumb.min.js"></script>
+	<script src="js/hexagons.min.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		function rotate() {
+			document.getElementById('easter').style.transform = "rotateY(180deg)";
+			setTimeout(function() {
+				document.getElementById('easter-overlay').removeAttribute('hidden');
+			}, 1000)
+			setTimeout(function() { 
+				document.getElementById('easter').style.transform = "rotateY(360deg)";
+			}, 5000)
+		}
+		function rotateK() {
+			var x = event.which || event.keyCode;
+			if(x == 13) {
+				document.getElementById('easter').style.transform = "rotateY(180deg)";
+				setTimeout(function() {
+					document.getElementById('easter-overlay').removeAttribute('hidden');
+				}, 1000)
+			}
+			setTimeout(function() { 
+				document.getElementById('easter').style.transform = "rotateY(360deg)";
+			}, 5000)
+		}
+		function off() {
+			document.getElementById('easter-overlay').setAttribute('hidden', 'hidden');
+		}
+	</script>
+</body>
+
+</html>
