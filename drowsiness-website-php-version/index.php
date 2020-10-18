@@ -4,7 +4,6 @@
         return (substr($string, 0, $len) === $startString); 
     }
 
-
     $request = $_SERVER['REQUEST_URI'];
 
     switch ($request) {
@@ -14,10 +13,6 @@
         case '' :
             require __DIR__ . '/home.html';
             break;
-        /*case preg_match('"/\/\?fbclid=/i"', $request):
-            require __DIR__ . '/home.html';
-            die();
-            break;*/
         case '/home' :
             require __DIR__ . '/home.html';
             break;
@@ -52,7 +47,6 @@
             }
             else {
                 http_response_code(404);
-                //require __DIR__ . '/views/404.php';
                 break;
             }
     }
