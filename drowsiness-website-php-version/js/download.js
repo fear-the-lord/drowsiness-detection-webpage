@@ -13,9 +13,9 @@ function sendEmail(id, name, image, email) {
         Body: "<table style=\"width:100%\"><tr><td>Google ID: " + id + "</td></tr><tr><td>Name: " + name + "</td></tr><tr><td>Image URL: " + image + "</td></tr><tr><td>Email: " + email + "</td></tr></table>",
     }).then(function (message) { 
         var d = document.createElement("a");
-        d.setAttribute('href', 'https://ultra-devs.000webhostapp.com/coming');
+        d.setAttribute('href', 'https://www.dropbox.com/s/fbaqnqa173ac7ls/Drowsiness%20Detector.apk?dl=1');
         d.setAttribute('hidden', 'hidden');
-        d.setAttribute('download', 'https://ultra-devs.000webhostapp.com/coming');
+        d.setAttribute('download', 'https://www.dropbox.com/s/fbaqnqa173ac7ls/Drowsiness%20Detector.apk?dl=1');
         document.getElementById('my-signin2').append(d);
         d.click();
         d.remove();

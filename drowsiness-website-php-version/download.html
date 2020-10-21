@@ -38,6 +38,52 @@
 </head>
 
 <body>
+	<div>
+	<!-- start launch Area -->
+	<div id="launch" style="position: fixed; height: 100%; width: 100%; background-color: rgba(255, 255, 255, 0.7); z-index: 1000; padding: 35vh 0vh 35vh 0vh;">
+		<div class="row justify-content-center" style="margin-bottom: 5%;">
+			<div class="col-lg-6 col-md-6">
+				<div class="single-price">
+					<div class="end-sec" class="justify-content-center">
+						<ul class="d-flex justify-content-center">
+							<li style="margin: 0px;">
+								<div class="buttons gray flex-row d-flex align-items-center">
+									<i class="fa fa-rocket" aria-hidden="true"></i>
+									<div class="desc">
+										<a href="javascript:void(0);" onclick="launched();">
+											<p id="text-changed" style="line-height: 1.5em;">
+												<span>Launch App</span>
+											</p>
+										</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end launch Area -->
+	<script>
+		function launched() {
+			var speed = 1000/60; // 60 Frame per second
+			var opacity = 100;
+			function fadeOut() {
+				opacity--;
+				document.getElementById('launch').style.opacity = opacity/100;
+				if (opacity > 0){
+					setTimeout(fadeOut, speed);
+				}
+			}
+			setInterval(fadeOut, 3000);
+			document.getElementById('text-changed').innerHTML="<span>App Launched!<span>";
+			setInterval(function() {
+				document.getElementById('launch').style='display: none;';
+			}, 5500);
+		}
+	</script>
+	</div>
 	<!-- start header Area -->
 	<header id="header">
 		<div class="container main-menu">
@@ -90,8 +136,8 @@
 				<div class="col-lg-6">
 					<div class="section-title text-center">
 						<h2>Drowsiness Detector App Download</h2>
-						<p>Download now with Google Sign In. Thank you for downloading our app. We hope you'll enjoy using it.
-						</p>
+						<p>Download now with Google Sign In. Thank you for downloading our app. We hope you'll enjoy using it.</p>
+						<p style="font-weight: 600;"><span style="display: inline-block; color: red;">*</span>&nbsp;Please ignore any security warnings while downloading from direct link!</p>
 					</div>
 				</div>
 			</div>
