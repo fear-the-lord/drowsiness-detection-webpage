@@ -31,7 +31,7 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body onload="loadvisitor()">
 	<!-- start header Area -->
 	<header id="header">
 		<div class="container main-menu">
@@ -527,7 +527,7 @@
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Quick Links</h4>
 					<ul>
-						<li><a href="elements.html">Pricing</a></li>
+						<li><a href="/pricing">Pricing</a></li>
 						<li><a href="/developers">Developers</a></li>
 						<li><a href="/faq">FAQ</a></li>
 						<!--li><a href="#">Terms of Service</a></li-->
@@ -586,6 +586,24 @@
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 				
+			</div>
+			<script>
+				function loadvisitor() {
+					var xhttp = new XMLHttpRequest();
+					xhttp.onreadystatechange = function() {
+						if (this.readyState == 4 && this.status == 200) {
+							document.getElementById("visitor").innerHTML = this.responseText;
+							console.log(this.responseText);
+						}
+					};
+					xhttp.open("GET", "visitor.php", true);
+					xhttp.send();
+				}
+			</script>
+			<div class="row align-items-center justify-content-center">
+				<p class="row justify-content-center m-0 col-lg-12 col-md-12" style="font-size: larger; font-weight: 700;">
+					Your are visitor number&nbsp;<span id ="visitor" style="color: #fff;"></span>&nbsp;of this website!
+				</p>
 			</div>
 		</div>
 	</footer>
