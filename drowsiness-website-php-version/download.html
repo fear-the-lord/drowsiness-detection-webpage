@@ -38,9 +38,9 @@
 </head>
 
 <body>
-	<div>
+	<div id="launch">
 	<!-- start launch Area -->
-	<div id="launch" style="position: fixed; height: 100%; width: 100%; background-color: rgba(255, 255, 255, 0.7); z-index: 1000; padding: 35vh 0vh 35vh 0vh;">
+	<div style="position: fixed; height: 100%; width: 100%; background-color: rgba(255, 255, 255, 0.7); z-index: 1000; padding: 35vh 0vh 35vh 0vh;">
 		<div class="row justify-content-center" style="margin-bottom: 5%;">
 			<div class="col-lg-6 col-md-6">
 				<div class="single-price">
@@ -70,7 +70,7 @@
 		</div>
 	</div>
 	<!-- end launch Area -->
-	<script>
+	<script id="remove-script">
 		function launched() {
 			var speed = 1000/60; // 60 Frame per second
 			var opacity = 100;
@@ -81,10 +81,10 @@
 					setTimeout(fadeOut, speed);
 				}
 			}
-			setInterval(fadeOut, 3000);
+			setTimeout(fadeOut, 3000);
 			document.getElementById('text-changed').innerHTML="<span>App Launched!<span>";
-			setInterval(function() {
-				document.getElementById('launch').style='display: none;';
+			setTimeout(function() {
+				document.getElementById('launch').remove();
 			}, 5500);
 		}
 	</script>
@@ -143,6 +143,7 @@
 						<h2>Drowsiness Detector App Download</h2>
 						<p>Download now with Google Sign In. Thank you for downloading our app. We hope you'll enjoy using it.</p>
 						<p style="font-weight: 600;"><span style="display: inline-block; color: red;">*</span>&nbsp;Please ignore any security warnings while downloading from direct link!</p>
+						<p style="font-weight: 600;"><span style="display: inline-block; color: red;">*</span>&nbsp;Please install the apk file from File Explorer if you are unable to install directly from your browser Downloads section!</p>
 					</div>
 				</div>
 			</div>
