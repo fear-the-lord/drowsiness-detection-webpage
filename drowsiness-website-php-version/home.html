@@ -32,6 +32,40 @@
 </head>
 
 <body onload="loadvisitor()">
+	<div id="overlay" style="position: fixed; z-index: 100000; height: 100vh; width: 100%; background-color: rgba(0, 0, 0, 0.7);">
+		<style>
+			.overlay-style {
+				margin: 0 25% 0 25%; }
+
+			@media (max-width: 767px) {
+			.overlay-style {
+				margin: 0 0 0 0; } }
+		</style>
+		<div class="row fullscreen d-flex align-items-center justify-content-between overlay-style">
+			<div class="home-banner-content col-lg-12 col-md-12 " style="background-color: rgba(255, 255, 255, 0.9); padding: 5%;">
+				<h1 class="d-flex flex-row justify-content-between">
+					Download the <br> App now!
+					<div class="buttons align-items-center justify-content-center d-flex flex-row" style="width: 7vh; height: 7vh; padding: 0px;" onclick="document.getElementById('overlay').remove();">
+						<i class="fa fa-close" style="padding: 0px; margin: auto; line-height: 0;" aria-hidden="true"></i>
+					</div>
+				</h1>
+				<p class="d-flex flex-row justify-content-center">Or click the cross to take a look at our features and services first</p>
+				<div class="download-button d-flex flex-row justify-content-center">
+					<div class="buttons dark flex-row d-flex align-items-center">
+						<i class="fa fa-download" aria-hidden="true"></i>
+						<div class="desc">
+							<a href="/download">
+								<p>
+									<span>Visit</span> <br>
+									download page
+								</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- start header Area -->
 	<header id="header">
 		<div class="container main-menu">
