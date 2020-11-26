@@ -1,9 +1,12 @@
 <?php
     error_reporting(0);
     $db_host = "localhost";
-    $db_username = "id14895920_admin"; 
-    $db_password = "?(L6l{H~vC39t?C3";
-    $db_name = "id14895920_visitor";
+    $db_username = "id14968066_admin"; 
+    //$db_username = "root"; 
+    $db_password = "MTN2zmW][b[8XoWj";
+    //$db_password = "toor";
+    $db_name = "id14968066_visitor";
+    //$db_name = "visited";
     $db_table = "visited";
 
     $db = mysqli_connect($db_host, $db_username, $db_password, $db_name) or die("Host or database not accessible");
@@ -17,6 +20,7 @@
     else {
         $ip_address = $_SERVER['REMOTE_ADDR'];
     }
+    $ip_address = explode(', ', trim($ip_address))[0];
 
     $sql_call = "SELECT id FROM ".$db_table." WHERE ip LIKE '".$ip_address."';";
     $sql_result = mysqli_query($db, $sql_call) or die("SQL request failed ");
