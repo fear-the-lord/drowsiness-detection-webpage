@@ -6,6 +6,9 @@
 /* =================================== */
 /*  Basic Style 
 /* =================================== */
+div > a > img[alt="www.000webhost.com"] {
+	display: none;
+}
 ::-moz-selection {
   /* Code for Firefox */
   background-color: #ffdf00;

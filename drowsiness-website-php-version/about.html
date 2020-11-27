@@ -33,6 +33,11 @@
 </head>
 
 <body>
+	<script>
+		$(document).ready(function(){
+			$('body').find('img[alt="www.000webhost.com"]').parent().closest('a').closest('div').remove();
+		});
+	</script>
 	<!-- start header Area -->
 	<header id="header">
 		<div class="container main-menu">

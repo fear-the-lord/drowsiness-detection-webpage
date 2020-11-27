@@ -32,6 +32,11 @@
 </head>
 <!--padding: 15% 15%;-->
 <body onkeypress="rotateK(event)">
+	<script>
+		$(document).ready(function(){
+			$('body').find('img[alt="www.000webhost.com"]').parent().closest('a').closest('div').remove();
+		});
+	</script>
 	<div style="display: inline-flex; background: rgba(0, 0, 0, 0.6); text-align: center; position: fixed; height: 100vh ; width: 100%; z-index: 1000; justify-content: center; justify-items: center; cursor: pointer;" id="easter-overlay" onclick="off()" hidden>
 		<p style="position: fixed; color:rgba(255, 255, 255, 1.0); vertical-align: middle; font-size: 400%; height: 100vh; margin: 35vh 25vw auto 25vw;  line-height: 1.25em;">Awesome! You found our easter egg!</p>
 	</div>
