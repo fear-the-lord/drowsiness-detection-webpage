@@ -18,6 +18,7 @@
 	<title>Home</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600|Roboto:400,400i,500" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<!--
 			CSS
 			============================================= -->
@@ -632,7 +633,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					xhttp.onreadystatechange = function() {
 						if (this.readyState == 4 && this.status == 200) {
 							document.getElementById("visitor").innerHTML = this.responseText;
-							console.log(this.responseText);
 						}
 					};
 					xhttp.open("GET", "visitor.php", true);
@@ -641,7 +641,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			</script>
 			<div class="row align-items-center justify-content-center">
 				<p class="row justify-content-center m-0 col-lg-12 col-md-12" style="font-size: larger; font-weight: 700;">
-					Your are visitor number&nbsp;<span id ="visitor" style="color: #fff;"></span>&nbsp;of this website!
+					<span id ="visitor" style="color: #fff;"></span>&nbsp;visitor(s) including you have already visited this website!
 				</p>
 			</div>
 		</div>
